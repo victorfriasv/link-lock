@@ -74,7 +74,7 @@ function main() {
         url = await api.decrypt(encrypted, password, salt, iv);
       } catch {
         // Password is incorrect.
-        error("Password is incorrect.");
+        error("Contraseña incorrecta");
 
         // Set the "decrypt without redirect" URL appropriately
         document.querySelector("#no-redirect").href =
